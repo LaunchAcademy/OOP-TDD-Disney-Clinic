@@ -32,7 +32,7 @@ describe Soundtrack do
     end
   end
 
-  describe 'print_soundtrack' do
+  describe '#print_soundtrack' do
     it "prints out the soundtrack song listing" do
       expect(aladdin_soundtrack.print_soundtrack).to eq("A Whole New World\nFriend Like Me\n")
     end
