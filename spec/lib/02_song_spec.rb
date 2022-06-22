@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "./../spec_helper"
 
 describe Song do
   let(:aladdin) { Character.new('Aladdin', 'human', 'Scott Weinger', 'hero') }
@@ -11,6 +11,18 @@ describe Song do
   describe ".new" do
     it "takes a name and a character array as arguments" do
       expect(friend_like_me).to be_a(Song)
+    end
+  end
+
+  describe "#name" do
+    it "has a reader for name" do
+      expect(friend_like_me.name).to eq("Friend Like Me")
+    end
+  end
+  
+  describe "#characters" do
+    it "has a reader for characters, that returns an array of character objects" do
+      expect(friend_like_me.name).to eq([genie])
     end
   end
 end

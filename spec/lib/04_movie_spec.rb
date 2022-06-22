@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "./../spec_helper"
 
 describe Movie do
   let(:aladdin) { Character.new('Aladdin', 'human', 'Scott Weinger', 'hero') }
@@ -52,7 +52,6 @@ describe Movie do
     it "adds a character to the 'characters' array" do
       aladdin_movie.add_character(genie)
 
-      expect(aladdin_movie.characters.count).to eq(4)
       expect(aladdin_movie.characters).to include(genie)
     end
   end

@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "./../spec_helper"
 
 describe Soundtrack do
   let(:aladdin) { Character.new('Aladdin', 'human', 'Scott Weinger', 'hero') }
@@ -27,7 +27,6 @@ describe Soundtrack do
     it "adds a song to the 'songs' array" do
       aladdin_soundtrack.add_song(prince_ali)
 
-      expect(aladdin_soundtrack.songs.count).to eq(3)
       expect(aladdin_soundtrack.songs).to include(prince_ali)
     end
   end

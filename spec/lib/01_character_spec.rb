@@ -1,4 +1,4 @@
-require "spec_helper"
+require_relative "./../spec_helper"
 
 describe Character do
   let(:genie) { Character.new('Genie', 'genie', 'Robin Williams', 'hero') }
