@@ -22,7 +22,7 @@ describe Song do
   
   describe "#characters" do
     it "has a reader for characters, that returns an array of character objects" do
-      expect(friend_like_me.name).to eq([genie])
+      expect(friend_like_me.characters).to eq([genie])
     end
   end
 end

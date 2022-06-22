@@ -24,6 +24,7 @@ describe Movie do
   end
 
   describe "#watch_count" do
+    pending "hol up"
     it "has a reader" do
       expect(aladdin_movie.watch_count).to eq(0)
     end
